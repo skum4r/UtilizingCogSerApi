@@ -9,7 +9,7 @@ var CogServiceApp = function(){
       
       //build url
       this.buildUrl = function(params){	
-	      	params = params ||  = {
+	      	params = params ||  {
 				"visualFeatures": "Description,Faces",
 				"language": "en",
 			};
