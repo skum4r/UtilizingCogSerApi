@@ -8,10 +8,11 @@ var CogServiceApp = function(){
        this.baseUrl = "https://westus.api.cognitive.microsoft.com/vision/v1.0/analyze";
       
       //build url
-      this.buildUrl = function(params = {
+      this.buildUrl = function(params){	
+	      	params = params ||  = {
 				"visualFeatures": "Description,Faces",
 				"language": "en",
-			}){		
+			};
 		 return this.baseUrl+"?"+$.param(params);
 	  };
 	  
